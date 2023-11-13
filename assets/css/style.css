@@ -3,18 +3,24 @@
 }
 
 html {
-  overflow-y: scroll;
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 body {
   margin: 0;
+  min-width: 100vh;
   font-family: "Oswald", sans-serif;
 }
 .container {
   max-width: 1280px;
   padding: 20px;
   margin: auto;
+}
+.gallery-page {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .content {
@@ -38,8 +44,8 @@ body {
 }
 
 .header {
-  background-color: rgb(58, 165, 192);
   position: fixed;
+  background-color: rgb(58, 165, 192);
   top: 0;
   width: 100vw;
   color: rgb(240, 241, 246);
@@ -136,8 +142,8 @@ a {
 }
 
 .textb::after {
-  padding: 1px;
-  margin-left: 2px;
+  padding: 2px;
+  margin-left: 9px;
   content: "new";
   background: rgb(255, 0, 0);
   color: rgb(252, 252, 252);
@@ -274,4 +280,27 @@ button[type="reset"]:hover {
 
 .input-name {
   text-transform: capitalize;
+}
+
+.anchor {
+  position: relative;
+}
+
+.anchor > span {
+  position: absolute;
+  top: -150px;
+}
+
+.inner-nav {
+  margin-bottom: 1em;
+}
+
+.part-link {
+  color: rgb(6, 5, 5);
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.part-link:hover {
+  color: aquamarine;
 }
