@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+.container {
+  max-width: 1280px;
+  padding: 20px;
+  margin: auto;
+}
+
+.content {
+  background-color: #fff;
+  margin-bottom: 100px;
+  margin-top: 140px;
+  color: black;
+}
+
+.bg-img {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(133, 145, 170);
+  background-image: url(../img/favicon.png), url(../img/wallper.jpeg);
+  background-size: 90px, cover;
+  background-position: 99% 12%, center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  background-color: rgb(58, 165, 192);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  color: rgb(240, 241, 246);
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+a {
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgb(58, 165, 192);
+  color: rgb(240, 241, 246);
+}
+
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.navbar-link {
+  border: 2px solid rgb(171, 103, 25);
+  padding: 0.7em;
+  display: block;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 6px;
+}
+
+.navbar-link.active {
+  background-color: rgba(171, 103, 25, 0.844);
+  color: white;
+}
+
+.navbar-link:hover {
+  background-color: rgba(171, 103, 25, 0.844);
+  color: antiquewhite;
+  transform: translateY(-7px) scale(1.15);
+  transition: 1.3s;
+}
+
+.list-catalog {
+  list-style: outside
+    url(https://images.freeimages.com/fic/images/icons/2058/rabbit_xp/48/green_flower_folder.png);
+  font-size: 30px;
+  background-color: rgba(185, 166, 166, 0.781);
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 1em 2em;
+}
+
+.sublist {
+  list-style: outside
+    url(https://images.freeimages.com/fic/images/icons/2058/rabbit_xp/48/blue_flower_folder.png);
+  font-size: 70%;
+  background-color: rgba(45, 127, 165, 0.664);
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  margin: 10px;
+  padding: 10px 10px 10px 40px;
+}
+
+.list {
+  list-style: outside
+    url(https://images.freeimages.com/fic/images/icons/2058/rabbit_xp/48/text.png);
+  background-color: rgba(137, 43, 226, 0.612);
+  font-size: 80%;
+  color: black;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px 10px 10px 25px;
+  /* padding-right: 10px;
+  padding-left: 25px; */
+  border-radius: 7px;
+}
+
+.textb::after {
+  padding: 1px;
+  margin-left: 2px;
+  content: "new";
+  background: rgb(255, 0, 0);
+  color: rgb(252, 252, 252);
+  font-size: 80%;
+}
+
+.articles-main {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.articles-link {
+  border-bottom: 0.5px solid rgb(155, 114, 60);
+  color: rgb(196, 65, 236);
+}
+
+.articles-comment {
+  color: rgba(107, 202, 84, 0.919);
+}
+
+.articles-next {
+  color: rgba(107, 202, 84, 0.919);
+  font-weight: 500;
+  transition: 0.7s;
+}
+
+.articles-next:hover {
+  color: rgb(196, 65, 236);
+}
+
+.articles-header {
+  text-align: center;
+}
+
+.paragraph::first-letter {
+  color: rgb(255, 0, 0);
+  font-size: 30px;
+  font-weight: 1000;
+  padding-right: 3px;
+}
+
+.border-img {
+  border-color: rgb(20, 150, 220);
+  border-style: solid;
+  border-width: 3px;
+}
+
+.border-img:hover {
+  border-color: transparent;
+}
+
+.bg-img-gallery {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(133, 145, 170);
+  background-image: url(../img/favicon.png), url(../img/wall.png);
+  background-size: 90px, 500px;
+  background-position: 99% 12%, center;
+  background-repeat: no-repeat, repeat;
+}
+.txt-center {
+  text-align: center;
+  font-weight: normal;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: rgba(17, 185, 223, 0.561);
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+legend {
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  transform: translateY(-10px);
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+button {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 35vh;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  transition: 0.5s;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: rgb(235, 173, 135);
+}
+
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-group-reg {
+  margin: 10px 0 5px;
+}
+
+.form-group-reg:hover {
+  outline: 2px dotted white;
+}
+
+.input-name {
+  text-transform: capitalize;
+}
